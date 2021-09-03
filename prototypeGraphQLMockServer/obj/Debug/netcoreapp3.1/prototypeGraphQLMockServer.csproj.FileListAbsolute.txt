@@ -51,3 +51,11 @@ C:\Dev\Practise\ProtoType\prototypeGraphQLMockServer\prototypeGraphQLMockServer\
 C:\Dev\Practise\ProtoType\prototypeGraphQLMockServer\prototypeGraphQLMockServer\obj\Debug\netcoreapp3.1\prototypeGraphQLMockServer.pdb
 C:\Dev\Practise\ProtoType\prototypeGraphQLMockServer\prototypeGraphQLMockServer\obj\Debug\netcoreapp3.1\prototypeGraphQLMockServer.genruntimeconfig.cache
 C:\Dev\Practise\ProtoType\prototypeGraphQLMockServer\prototypeGraphQLMockServer\bin\Debug\netcoreapp3.1\HotChocolate.Data.dll
+C:\Dev\Practise\ProtoType\prototypeGraphQLMockServer\prototypeGraphQLMockServer\bin\Debug\netcoreapp3.1\db.json
+C:\Dev\Practise\ProtoType\prototypeGraphQLMockServer\prototypeGraphQLMockServer\bin\Debug\netcoreapp3.1\System.Web.Mvc.dll
+C:\Dev\Practise\ProtoType\prototypeGraphQLMockServer\prototypeGraphQLMockServer\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
+C:\Dev\Practise\ProtoType\prototypeGraphQLMockServer\prototypeGraphQLMockServer\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
+C:\Dev\Practise\ProtoType\prototypeGraphQLMockServer\prototypeGraphQLMockServer\bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll
+C:\Dev\Practise\ProtoType\prototypeGraphQLMockServer\prototypeGraphQLMockServer\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
+C:\Dev\Practise\ProtoType\prototypeGraphQLMockServer\prototypeGraphQLMockServer\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
+C:\Dev\Practise\ProtoType\prototypeGraphQLMockServer\prototypeGraphQLMockServer\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll

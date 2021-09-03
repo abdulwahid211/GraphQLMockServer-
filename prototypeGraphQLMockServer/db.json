@@ -1,0 +1,44 @@
+{
+    "Account":{
+       "Banking":{
+          "BankAccount":{
+             "BankName":"Barclays",
+             "AccountNumber":"034534",
+             "SortCode":"3455"
+          },
+          "CardDetails":[
+             {
+                "CardNumber":"23423432",
+                "IsPrimary":true
+             },
+             {
+                "CardNumber":"132243",
+                "IsPrimary":true
+             },
+             {
+                "CardNumber":"3423432",
+                "IsPrimary":true
+             }
+          ]
+       },
+       "AccountName":"Abdul JSON",
+       "Product":{
+          "FirstName":"Abdul",
+          "Lastname":"Rahman",
+          "DateOfBirth":"1992-06-02T00:00:00",
+          "Contact":{
+             "Email":"abdulwahid211@gmail.com",
+             "MobilePhoneNumber":"072343223432",
+             "Address":{
+                "ApartmentNumber":"25",
+                "BuildingNumber":"245 ",
+                "BuildingName":"Ballin Court",
+                "Street":"Lynda road",
+                "Area":"East Manchester",
+                "City":"London",
+                "Postcode":"EC1"
+             }
+          }
+       }
+    }
+ }

@@ -9,7 +9,16 @@
     <PackageReference Include="HotChocolate.AspNetCore" Version="11.3.5" />
     <PackageReference Include="HotChocolate.AspNetCore.Playground" Version="10.5.3" />
     <PackageReference Include="HotChocolate.Data" Version="11.3.6" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
+
+	<ItemGroup>
+		<None Update="db.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
 
 
 </Project>

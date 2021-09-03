@@ -1,43 +1,34 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using prototypeGraphQLMockServer.Models.Query.Account;
+using System.IO;
+using System.Text.Json;
+using System;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace DemoGraphQL.Adapters
 {
     public class InMemoryAccountService : Account
     {
 
-        public BankAccount _bankAccount;
-
         public List<DebitCard> CardDetails;
-
         public InMemoryAccountService()
         {
-            Banking = new Banking();
-            AccountName = "Abdul Wahid";
-            _bankAccount = new BankAccount() {BankName = "HSBC", AccountNumber = "034534", SortCode = "3455"};
-            CardDetails = new List<DebitCard>
-            {
-                new DebitCard()
-                {
-                    IsPrimary = true,
-                    CardNumber = "23423432"
-                },
-                new DebitCard()
-                {
-                    IsPrimary = true,
-                    CardNumber = "132243"
-                },
-                new DebitCard()
-                {
-                    IsPrimary = true,
-                    CardNumber = "3423432"
-                }
-            };
 
+            string jsonData = System.IO.File.ReadAllText(@".//db.json");
 
-            Banking.BankAccount = _bankAccount;
-            Banking.CardDetails = CardDetails;
+            var accountObjects = JObject.Parse(jsonData);
+
+            string bankingObject = accountObjects["Account"]["Banking"].ToString();
+
+            string productObject = accountObjects["Account"]["Product"].ToString();
+
+            AccountName = accountObjects["Account"]["AccountName"].ToString();
+
+            Product = JsonConvert.DeserializeObject<Product>(productObject);
+
+            Banking = JsonConvert.DeserializeObject<Banking>(bankingObject);
 
         }
 

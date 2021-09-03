@@ -18,6 +18,10 @@ namespace prototypeGraphQLMockServer.GraphQL.Resolvers
 
         public BankAccount GetBankAccount() => GetBanking().BankAccount;
 
+        public Address GetAddress() => _account.Product.Contact.Address;
+
+        public Contact GetContact() => _account.Product.Contact;
+
         public List<DebitCard> GetDebitCards() => GetBanking().CardDetails;
     }
 }

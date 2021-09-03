@@ -9,6 +9,7 @@ using prototypeGraphQLMockServer.GraphQL.Types;
 using prototypeGraphQLMockServer.Models.Query;
 using prototypeGraphQLMockServer.Models.Query.Account;
 using prototypeGraphQLMockServer.Models.Query.Account.Interfaces;
+using System.Text.Json;
 
 namespace prototypeGraphQLMockServer.GraphQL
 {
@@ -19,6 +20,10 @@ namespace prototypeGraphQLMockServer.GraphQL
         public Query(Account account)
         {
             _account = account;
+            string jsonString = JsonSerializer.Serialize(account);
+
+            System.Console.WriteLine("Output Shit:");
+            System.Console.WriteLine(jsonString);
         }
 
 

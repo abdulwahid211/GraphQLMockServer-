@@ -28,16 +28,21 @@ namespace prototypeGraphQLMockServer
         [Obsolete]
         public void ConfigureServices(IServiceCollection services)
         {
+        
             services.AddSingleton<Account, InMemoryAccountService>();
+
+
 
             services.AddGraphQLServer()
                 .AddType<AccountType>()
                 .AddType<BankingType>()
                 .AddType<DebitCardType>()
+                .AddType<ProductType>()
+                .AddType<ContactType>()
+                .AddType<AddressType>()
                 .AddType<BankAccountType>()
                 .AddQueryType<Query>()
                 .AddMutationType<MutationAccount>()
-
                 .AddFiltering();
         }
 
